@@ -138,7 +138,7 @@ const About = () => {
               <div className="flex-1">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-[#308AFF] p-4 rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-blue-700">
-                    <p className="text-2xl font-bold">75000+</p>
+                    <p className="text-2xl font-bold">100k</p>
                     <p>Alumni</p>
                   </div>
                   <div className="bg-[#308AFF] p-4 rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-blue-700">
@@ -146,11 +146,11 @@ const About = () => {
                     <p>Professional Programs</p>
                   </div>
                   <div className="bg-[#308AFF] p-4 rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-blue-700">
-                    <p className="text-2xl font-bold">150</p>
+                    <p className="text-2xl font-bold">300+</p>
                     <p>Instructor</p>
                   </div>
                   <div className="bg-[#308AFF] p-4 rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-blue-700">
-                    <p className="text-2xl font-bold">+80</p>
+                    <p className="text-2xl font-bold">100+</p>
                     <p>Mou’s Sign</p>
                   </div>
                 </div>
