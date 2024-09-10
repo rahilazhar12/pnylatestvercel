@@ -154,7 +154,7 @@ const Trainingschedule1 = () => {
           </Link>
         </div>
       </header>
-      <section class="">
+      <section className="">
         <div className="grid lg:grid-cols-4 p-10">
           <div className='col-span-2 text-[32px] font-semibold'>Training Schedule</div>
           <div className=' col-span-2 flex justify-end gap-5'>
@@ -260,37 +260,37 @@ const Trainingschedule1 = () => {
       </header>
 
 
-      <div class="container mx-auto overflow-x-auto px-5 mt-5">
-        <table class="min-w-full bg-white shadow overflow-hidden rounded-lg">
-          <thead class="bg-gray-50">
+      <div className="container mx-auto overflow-x-auto px-5 mt-5">
+        <table className="min-w-full bg-white shadow overflow-hidden rounded-lg">
+          <thead className="bg-gray-50">
             <tr>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Course Name
               </th>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Start Date
               </th>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Session Timings
               </th>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Duration
               </th>
             </tr>
           </thead>
-          <tbody class="bg-white divide-y divide-gray-200">
+          <tbody className="bg-white divide-y divide-gray-200">
             {selectedCity && displayedBatches[selectedCity] && displayedBatches[selectedCity].filter(batch => (!selectedDivision || (batch.branch && batch.branch.DivisionName === selectedDivision))).map(batch => (
-              <tr key={batch.id} class="hover:bg-gray-100">
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+              <tr key={batch.id} className="hover:bg-gray-100">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   {batch.courseName}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {batch.start_date}
                 </td>
-                <td class="px-6 py-4 whitespace-normal text-sm text-gray-500">
+                <td className="px-6 py-4 whitespace-normal text-sm text-gray-500">
                   {formatSessionTimings(batch.days)}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {calculateDurationInMonths(batch.start_date, batch.end_date)}
                 </td>
               </tr>

@@ -31,6 +31,7 @@ const Flyers = () => {
     fetchData();
   }, []);
 
+
   // const handleCategoryClick = (category) => {
   //     setSelectedCategory(category); // Update the selected category
   // };
@@ -65,8 +66,8 @@ const Flyers = () => {
       <section className="lg:h-[254px] bg-[#152438;] text-white flex flex-col justify-center items-center max-sm:p-5 ">
         <div className="max-sm:text-[24px] font-semibold riseUp 1s ease-out forwards space-y-3">
 
-          <div class="text-container">
-            <h1 class="outline-text-white-flyers">
+          <div className="text-container">
+            <h1 className="outline-text-white-flyers">
               E-Flyers
             </h1>
           </div>

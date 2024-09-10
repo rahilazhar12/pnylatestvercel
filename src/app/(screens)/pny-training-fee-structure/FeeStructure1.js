@@ -114,21 +114,21 @@ const FeeStructure1 = () => {
         </header>
         <header className="text-gray-600 body-font bg-[#308AFE]">
           <div className="container mx-auto flex flex-wrap py-2 flex-col md:flex-row items-center">
-            <p class="text-sm text-white mx-auto leading-relaxed text-base">Note: Registration Fee For 1 Year Duration Diploma Program: 10,000/-Rs  |  Registration Fee For 6 Months Duration Courses: 5000/- Rs  |  Registration Fee For 1 Month to 3 Months Courses: 2000/- Rs</p>
+            <p className="text-sm text-white mx-auto leading-relaxed text-base">Note: Registration Fee For 1 Year Duration Diploma Program: 10,000/-Rs  |  Registration Fee For 6 Months Duration Courses: 5000/- Rs  |  Registration Fee For 1 Month to 3 Months Courses: 2000/- Rs</p>
           </div>
         </header>
-        <section class="text-gray-600 body-font">
-          <div class="container px-4 py-10 mx-auto">
-            <div class="flex flex-col sm:flex-row justify-between items-center w-full">
-              <h1 class="text-2xl font-bold text-black dark:text-white">Fee Structure</h1>
+        <section className="text-gray-600 body-font">
+          <div className="container px-4 py-10 mx-auto">
+            <div className="flex flex-col sm:flex-row justify-between items-center w-full">
+              <h1 className="text-2xl font-bold text-black dark:text-white">Fee Structure</h1>
               <div>
                 <a href="https://lms.pnytraining.com/" target="_blank" rel="noopener noreferrer">
-                  <button class="px-4 py-2 text-blue-500 font-medium border border-blue-500 rounded-xl hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">
+                  <button className="px-4 py-2 text-blue-500 font-medium border border-blue-500 rounded-xl hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">
                     Enroll Now (Limited seats available)
                   </button>
                 </a>
                 <a href="/training-schedule">
-                  <button class="ml-4 py-2 px-4 text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300 ease-in-out rounded-md focus:outline-none">
+                  <button className="ml-4 py-2 px-4 text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300 ease-in-out rounded-md focus:outline-none">
                     Training Schedule
                   </button>
                 </a>

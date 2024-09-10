@@ -382,8 +382,8 @@ const Coursedetail = ({ params }) => {
           <div className="grid md:grid-cols-3 gap-6">
             {/* Content Section */}
             <div className="md:col-span-2 bg-white p-10 shadow rounded max-h-[950px] relative">
-              <div class="sticky bottom-0 flex justify-center">
-                <div class="animate-bounce"></div>
+              <div className="sticky bottom-0 flex justify-center">
+                <div className="animate-bounce"></div>
               </div>
               <div className="scroll-content overflow-y-auto max-h-[800px]">
                 <p className="text-gray-700">{parsedDescription}</p>

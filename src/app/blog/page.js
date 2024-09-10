@@ -11,7 +11,7 @@ const Blog = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("https://www.admin777.pny-trainings.com/api/featuredposts")
+        fetch("https://www.admin777.pny-trainings.com/api/featuredposts", { cache: "no-store" })
             .then((response) => response.json())
             .then((data) => {
                 // Sort the data by publication date in descending order

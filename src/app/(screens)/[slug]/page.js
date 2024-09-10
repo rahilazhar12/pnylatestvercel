@@ -2,7 +2,7 @@ import React from 'react';
 import CourseDetails from './courseDetails';
 
 export async function generateStaticParams() {
-    const res = await fetch('https://www.admin777.pny-trainings.com/api/course');
+    const res = await fetch('https://www.admin777.pny-trainings.com/api/course', { cache: 'no-store' });
     const courses = await res.json();
 
     if (!Array.isArray(courses)) {
@@ -26,7 +26,7 @@ export default async function Home({ params }) {
         .then((data) => ({
             metatitle: data.course?.meta_title || "",
             metadescription: data.course?.meta_description || "",
-            canonicalUrl: `https://pnytrainings.com/${data.course?.url_slug}` || "",
+            canonicalUrl: `https://www.pnytrainings.com/${data.course?.url_slug}` || "",
         }))
         .catch((error) => {
             console.error("Error fetching metadata:", error);

@@ -222,11 +222,11 @@ const Footer = () => {
                     Our Branches
                 </div>
 
-                <footer class="bg-base-200 text-base-content p-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <footer className="bg-base-200 text-base-content p-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div>
-                            <Image src={arfatower} alt="Arfa Tower" class="mb-2" />
-                            <h2 class="text-black font-bold dark:text-white">
+                            <Image src={arfatower} alt="Arfa Tower" className="mb-2" />
+                            <h2 className="text-black font-bold dark:text-white">
                                 Arfa Tower (Head Office)
                             </h2>
                             <p>
@@ -235,13 +235,13 @@ const Footer = () => {
                             </p>
                         </div>
                         <div>
-                            <Image src={iqbaltown} alt="Iqbal Town" class="mb-2" />
-                            <h2 class="text-black font-bold dark:text-white">Iqbal Town</h2>
+                            <Image src={iqbaltown} alt="Iqbal Town" className="mb-2" />
+                            <h2 className="text-black font-bold dark:text-white">Iqbal Town</h2>
                             <p>743 B Kashmir Block Allama Iqbal Town, Lahore</p>
                         </div>
                         <div>
-                            <Image src={johartown} alt="Johar Town" class="mb-2" />
-                            <h2 class="text-black font-bold dark:text-white">Johar Town</h2>
+                            <Image src={johartown} alt="Johar Town" className="mb-2" />
+                            <h2 className="text-black font-bold dark:text-white">Johar Town</h2>
                             <p>
                                 1st Floor 256 / A, Block R2 Near Shaukat Khanam Hospital, next
                                 to Standard Chartered, Lahore
@@ -249,13 +249,12 @@ const Footer = () => {
                         </div>
                         <div>
                             <Image
-                                className="rounded-full"
+                                className="rounded-full mb-2"
                                 src={shad}
                                 alt="Rawalpindi"
-                                class="mb-2"
                                 width={60}
                             />
-                            <h2 class="text-black font-bold dark:text-white">
+                            <h2 className="text-black font-bold dark:text-white">
                                 Shahdara Branch
                             </h2>
                             <p>
@@ -265,8 +264,8 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <Image src={rawal} alt="Rawalpindi" class="mb-2" />
-                            <h2 class="text-black font-bold dark:text-white">Rawalpindi</h2>
+                            <Image src={rawal} alt="Rawalpindi" className="mb-2" />
+                            <h2 className="text-black font-bold dark:text-white">Rawalpindi</h2>
                             <p>
                                 Office # 102, Floor #1 Talha Heights Plot # 21-D, 6th Road
                                 Satellite Town, Rawalpindi
@@ -274,20 +273,19 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <Image src={multan} alt="Multan" class="mb-2" />
-                            <h2 class="text-black font-bold dark:text-white">Multan</h2>
+                            <Image src={multan} alt="Multan" className="mb-2" />
+                            <h2 className="text-black font-bold dark:text-white">Multan</h2>
                             <p>237-B, Model Town, Main Boulevard, Multan</p>
                         </div>
 
                         <div>
                             <Image
-                                className="rounded-full"
+                                className="rounded-full mb-2"
                                 src={temp}
                                 alt="Rawalpindi"
-                                class="mb-2"
                                 width={60}
                             />
-                            <h2 class="text-black font-bold dark:text-white">
+                            <h2 className="text-black font-bold dark:text-white">
                                 Sargodha Branch
                             </h2>
                             <p>
@@ -296,13 +294,12 @@ const Footer = () => {
                         </div>
                         <div>
                             <Image
-                                className="rounded-full"
+                                className="rounded-full mb-2"
                                 src={temp}
                                 alt="Rawalpindi"
-                                class="mb-2"
                                 width={60}
                             />
-                            <h2 class="text-black font-bold dark:text-white">Saudi Arabia</h2>
+                            <h2 className="text-black font-bold dark:text-white">Saudi Arabia</h2>
                             <p>
                                 Office No. 7, 1st Floor, ALJMAZ Building Prince Sultan Bin
                                 Abdulaziz Rd, Above Dunkin Donuts Al Olaya, Riyadh 12221

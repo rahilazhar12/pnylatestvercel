@@ -8,7 +8,7 @@ const Blogdetails = ({ params }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(`https://www.admin777.pny-trainings.com/api/featuredposts/${params}`)
+    fetch(`https://www.admin777.pny-trainings.com/api/featuredposts/${params}`, { cache: 'no-store' })
       .then((response) => response.json())
       .then((jsonData) => {
         setData(jsonData.post_detail); // Assuming post_detail is the correct structure
@@ -71,21 +71,21 @@ const Blogdetails = ({ params }) => {
 
 
         <section>
-          <div class="bg-gray-800 text-white p-6 min-h-auto">
-            <div class="container mx-auto">
-              <div class="flex flex-wrap justify-around items-center">
+          <div className="bg-gray-800 text-white p-6 min-h-auto">
+            <div className="container mx-auto">
+              <div className="flex flex-wrap justify-around items-center">
                 {/* <!-- Text section --> */}
-                <div class="w-full lg:w-1/2 px-4">
-                  <h2 class="text-3xl font-bold mb-4 text-center sm:text-left">{data.title}</h2>
-                  <p class="mb-4 text-center sm:text-left">{data.description_short}</p>
-                  <p class="text-center sm:text-left">Publish date: {data.published_date}</p>
+                <div className="w-full lg:w-1/2 px-4">
+                  <h2 className="text-3xl font-bold mb-4 text-center sm:text-left">{data.title}</h2>
+                  <p className="mb-4 text-center sm:text-left">{data.description_short}</p>
+                  <p className="text-center sm:text-left">Publish date: {data.published_date}</p>
                 </div>
 
                 {/* <!-- Image section --> */}
-                <div class="w-full lg:w-1/2 flex justify-center items-center bg-gray-700 p-2 mt-4 lg:mt-0">
+                <div className="w-full lg:w-1/2 flex justify-center items-center bg-gray-700 p-2 mt-4 lg:mt-0">
                   {/* <!-- Responsive image container --> */}
-                  <div class="w-full">
-                    <img class="w-full h-52 md:h-96" src={data.post_image_thumb} alt="" loading='lazy' />
+                  <div className="w-full">
+                    <img className="w-full h-52 md:h-96" src={data.post_image_thumb} alt="" loading='lazy' />
                   </div>
                 </div>
 
