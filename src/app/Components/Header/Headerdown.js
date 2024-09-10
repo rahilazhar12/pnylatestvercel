@@ -90,7 +90,7 @@ const Searchbar = () => {
                 className="outline-none focus:outline-none border px-3 py-5 bg-blue-400 text-white h-[36px] rounded-lg flex items-center justify-center w-52 mx-auto"
                 onClick={toggleDropdown}
               >
-                <span className="pr-1 font-semibold flex-1">Categories</span>
+                <span className="pr-1 font-semibold flex-1">Courses</span>
                 <span>{/* Your SVG icon here */}</span>
               </button>
               {dropdownOpen && (
