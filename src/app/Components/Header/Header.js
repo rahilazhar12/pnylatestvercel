@@ -195,7 +195,7 @@ const Header = () => {
                 </span>
                 <span className="flex gap-3 opacity-85">
                     <FaWhatsapp className="mt-1" />
-                    0321-9533335
+                    0309-7779401
                 </span>
 
             </nav>
