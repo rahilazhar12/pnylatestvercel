@@ -1,4 +1,4 @@
-import ClientComponent from "./(screens)/home/Client";
+import ClientComponent from "./(screens)/home/page";
 export default async function Home() {
   const metadata = await fetch(
     "https://www.admin777.pny-trainings.com/api/metas/home",

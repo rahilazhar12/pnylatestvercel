@@ -6,7 +6,7 @@ import Image from "next/image";
 import icon from "../../assets/images/Featured icon.svg";
 import vector from "../../assets/images/vecter.png";
 import newgroup from "../../assets/images/newgroup.png";
-import map from "../../assets/images/noun-pakistan-264183 1.png";
+import map from "../../assets/image/noun-pakistan-264183 1.jpg";
 import darkmap from "../../assets/image/darkmap.png";
 import Banner from '../../assets/image/bannerhome.png'
 import { durationdata } from "../../Components/Data/Data";
@@ -245,7 +245,7 @@ const ClientComponent = () => {
 
                 {/* Section-5 */}
                 <section className=' lg:mt-5'>
-                    <div className='lgh dark:text-white'>We Build Leaders For professional work</div>
+                    <div className='lgh dark:text-white'></div>
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 lg:px-20 lg:py-10 md:px-3 md:py-10 max-sm:p-1 ">
                         <div className='max-sm:order-1 '>
                             <div className='bg-blue-500 rounded-xl text-white xl:w-[541px] xl:h-[239px] xl:py-[47px] xl:px-[32px]  lg:w-[362px] lg:h-[200px] lg:px-[13px] lg:py-[26px] md:w-[362px] md:h-[200px] md:px-[10px] md:py-[20px] max-sm:px-3 max-sm:py-10'>
