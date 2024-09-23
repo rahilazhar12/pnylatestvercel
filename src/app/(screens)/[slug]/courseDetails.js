@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { useRouter } from 'next/navigation'; // Import useRouter
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -21,6 +22,7 @@ import gif from '../../assets/image/gif.gif';
 
 const Coursedetail = ({ params }) => {
   const courseSlug = params.slug;
+  const router = useRouter(); // Initialize useRouter
   let modulesData = [];
   const [isLoading, setIsLoading] = useState(true);
   const [courseData, setCourseData] = useState(null);
@@ -37,21 +39,27 @@ const Coursedetail = ({ params }) => {
       );
       if (response.ok) {
         const data = await response.json();
+        // If the course or its `url_slug` is null, redirect to the 404 page
+        if (!data.course || !data.course.url_slug) {
+          const redirectUrl = new URL('/404', window.location.origin); // Construct absolute URL for the redirect
+          router.push(redirectUrl.href); // Redirect to 404 page
+          return;
+        }
+
         setCourseData(data.course);
-        setInstructor(data.course_instructor);
       } else {
-        console.error(`Failed to fetch course data for slug: ${courseSlug}`);
+        // If the response is not OK, redirect to the 404 page
+        const redirectUrl = new URL('/404', window.location.origin);
+        router.push(redirectUrl.href); // Redirect to 404 page
       }
     } catch (error) {
-      console.error(
-        `Error fetching course data for slug: ${courseSlug}:`,
-        error
-      );
+      console.error(`Error fetching course data for slug: ${courseSlug}:`, error);
+      const redirectUrl = new URL('/404', window.location.origin);
+      router.push(redirectUrl.href); // Redirect to 404 page in case of an error
     } finally {
       setIsLoading(false);
     }
   };
-
   const fetchCourses = async () => {
     try {
       // Replace this URL with the actual URL of the API if you're fetching from a live API

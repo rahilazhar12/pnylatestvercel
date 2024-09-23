@@ -1,6 +1,5 @@
 import Blogdetails from "./Blogdetailpage";
-import NotFound from "./error";
-import NoData from "./error"; // Assuming you have a NoData component to show when there is no data
+import Custom404 from "@/app/404/page";
 
 // Function to fetch the slugs that you want to generate static pages for
 export async function generateStaticParams() {
@@ -23,7 +22,7 @@ export default async function Blogdetailsnew({ params }) {
   if (response.status !== 200) {
     // If the response status is not 200, render the 404 page
     return (
-      <NotFound />
+      <Custom404 />
     );
   }
 
@@ -32,7 +31,7 @@ export default async function Blogdetailsnew({ params }) {
   if (!data.post_detail) {
     // If post_detail is null, render the NoData component
     return (
-      <NoData />
+      <Custom404 />
     );
   }
 
