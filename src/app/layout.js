@@ -12,19 +12,19 @@ import { usePathname, useRouter } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-  const router = useRouter();
+  // const pathname = usePathname();
+  // const router = useRouter();
 
-  useEffect(() => {
-    const blockedUrls = [
-      '/blog/short-courses-in-faisalabad',
-      // Add more URLs you want to block
-    ];
+  // useEffect(() => {
+  //   const blockedUrls = [
+  //     '/blog/short-courses-in-faisalabad',
+  //     // Add more URLs you want to block
+  //   ];
 
-    if (blockedUrls.includes(pathname)) {
-      router.replace('/404'); // or any custom 404 page path
-    }
-  }, [pathname, router]);
+  //   if (blockedUrls.includes(pathname)) {
+  //     router.replace('/404'); // or any custom 404 page path
+  //   }
+  // }, [pathname, router]);
 
   return (
     <html lang="en">

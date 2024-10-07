@@ -5,11 +5,11 @@ export function middleware(req) {
 
   // // Check if the URL contains a query string
 
-  if (url.search) {
-    // Construct absolute URL for the redirect
-    const redirectUrl = new URL('/404', url.origin);
-    return NextResponse.redirect(redirectUrl);
-  }
+  // if (url.search) {
+  //   // Construct absolute URL for the redirect
+  //   const redirectUrl = new URL('/404', url.origin);
+  //   return NextResponse.redirect(redirectUrl);
+  // }
 
   // Check if the URL pathname ends with .html or .txt
 
