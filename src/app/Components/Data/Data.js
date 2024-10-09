@@ -25,7 +25,7 @@ export const contactus = [
     title: "Arfa Tower",
     description: "1st Floor 256 / A, Block R2 Near Shaukat Khanam Hospital, next to Standard Chartered, Lahore",
     phone: " 0304-1111774",
-    phone1: "0320-1443744",
+    phone1: "0309-7779401",
     Map: "https://maps.app.goo.gl/WoT7KdNiFN7kNJEm9",
     link: "https://www.youtube.com/watch?v=_HulKf9eRew"
   },

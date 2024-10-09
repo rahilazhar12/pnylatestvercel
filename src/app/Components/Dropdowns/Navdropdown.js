@@ -19,7 +19,7 @@ const NavDropdown = () => {
       {isOpen && (
         <div className="dropdown-content absolute bg-white shadow-md mt-2 w-48 rounded z-50">
           {/* <Link href="https://www.admin777.pny-trainings.com/login" target='_blank' className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white" onClick={closeDropdown}>Dashboard</Link> */}
-          <Link href="https://exam.pnytrainings.com/home" target='_blank' className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white" onClick={closeDropdown}>Exam Portal</Link>
+          <Link href="https://exam.pny-trainings.com/home" target='_blank' className="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white" onClick={closeDropdown}>Exam Portal</Link>
         </div>
       )}
     </div>

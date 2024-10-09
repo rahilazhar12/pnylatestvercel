@@ -90,7 +90,7 @@ const Footer = () => {
                             {" "}
                             <span className="font-bold">Head Office</span> <br />
                             Office # 1, Level # 14, Arfa Software Technology Park, Ferozepur
-                            Road Lahore, Pakistan Phone: 03041111774 Whatsapp: 03201443744
+                            Road Lahore, Pakistan Phone: 03041111774 Whatsapp: 0309-7779401
                         </p>
                     </aside>
                     <nav className="max-sm:text-sm">
