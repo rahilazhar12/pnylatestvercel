@@ -20,7 +20,6 @@ const Bestinstitute1 = () => {
           "https://www.admin777.pny-trainings.com/api/pages/best-online-it-institute-in-lahore"
         );
         setData(response.data);
-
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching data: ", error);

@@ -19,6 +19,7 @@ export default async function Bestinstitute() {
     <>
       <title>{metadata.metatitle}</title>
       <meta name="description" content={metadata.metadescription} />
+      <link rel="canonical" href="https://www.pnytrainings.com/best-institute-for-it-courses-in-arfa-karim-tower" />
       <Bestinstitute1 />
     </>
   );

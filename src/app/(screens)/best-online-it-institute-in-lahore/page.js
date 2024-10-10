@@ -19,7 +19,7 @@ const Page = async () => {
 
             <title>{metadata.metatitle}</title>
             <meta name="description" content={metadata.metadescription} />
-            <link rel="canonical" href="https://www.admin777.pny-trainings.com/best-online-it-institute-in-lahore" />
+            <link rel="canonical" href="https://www.pnytrainings.com/best-online-it-institute-in-lahore" />
 
             <BestInstituteInLahore />
         </>
