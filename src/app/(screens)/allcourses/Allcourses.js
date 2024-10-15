@@ -138,8 +138,8 @@ const AllCourses = () => {
 
                 <section className="lg:p-10">
                     <div className="grid justify-center">
-                        <div className=" lgh lg:p-2  dark:text-white">Our Affiliations</div>
-                        <div className="lgp max-sm:p-3 md:px-10 md:py-2 dark:text-white">
+                        <div className=" lgh lg:p-2  ">Our Affiliations</div>
+                        <div className="lgp max-sm:p-3 md:px-10 md:py-2 ">
                             Our collaboration with esteemed partners has strengthened our
                             mission to empower youth through skills, making a lasting
                             impact on their lives.
@@ -149,7 +149,7 @@ const AllCourses = () => {
                             <img src="/images/Frame 624.png " alt="" />
                         </div>
 
-                        <div className="flex justify-center p-5 gap-5 max-sm:hidden dark:text-white">
+                        <div className="flex justify-center p-5 gap-5 max-sm:hidden ">
                             <div className=" border-b-2 border-black">
                                 Navtech certifications
                             </div>

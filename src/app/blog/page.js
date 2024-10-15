@@ -49,7 +49,7 @@ const Blog = () => {
     }
 
     return (
-        <Flowbite>
+        
             <main className="bg-gray-100 dark:bg-slate-800 ring-1 ring-slate-900/5 shadow-xl">
                 {/* Section-2 */}
                 <section className="bg-gray-800 lg:h-[500px] h-auto sm:h-96 max-sm:p-2">
@@ -151,14 +151,14 @@ const Blog = () => {
                                 />
                                 <div className="p-6">
                                     <h5
-                                        className="text-2xl text-black font-bold tracking-tight mb-2 dark:text-black"
+                                        className="text-2xl text-black font-bold tracking-tight mb-2 "
                                         data-aos="fade-up-right"
                                         data-aos-delay={`${index * 100}`}
                                     >
                                         {item.title}
                                     </h5>
                                     <p
-                                        className="font-normal text-gray-700 mb-4 dark:text-black"
+                                        className="font-normal text-gray-700 mb-4 "
                                         data-aos="fade-up-right"
                                         data-aos-delay={`${index * 100 + 50}`}
                                     >
@@ -177,7 +177,7 @@ const Blog = () => {
                     )}
                 </section>
             </main>
-        </Flowbite>
+        
     );
 };
 

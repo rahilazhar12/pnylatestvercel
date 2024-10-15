@@ -99,16 +99,16 @@ const Clientcourses = ({ params }) => {
           </section>
         </div>
 
-        <section className="text-gray-600 body-font bg-gray-100 dark:bg-slate-800">
+        <section className="text-gray-600 body-font bg-gray-100">
           <div className="container px-5 py-20 mx-auto">
-            <h1 className="text-3xl font-bold text-gray-900 mb-3 ml-5 dark:text-white">
+            <h1 className="text-3xl font-bold text-gray-900 mb-3 ml-5 ">
               Available Courses
             </h1>
             <div className="flex flex-wrap -m-4 items-center justify-center">
               {courses.length > 0 &&
                 courses.map((item, index) => (
                   <div key={index} className="p-4 lg:w-1/4 md:w-1/2 w-full">
-                    <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all hover:-translate-y-2">
+                    <div className="bg-white  rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all hover:-translate-y-2">
                       <Link href={`/${item.url_slug}`}>
                         <div className="h-40 w-full overflow-hidden">
                           <Image
@@ -122,7 +122,7 @@ const Clientcourses = ({ params }) => {
                         </div>
                       </Link>
                       <div className="p-6">
-                        <h2 className="font-semibold text-lg text-gray-900 dark:text-white mb-3">
+                        <h2 className="font-semibold text-lg text-gray-900  mb-3">
                           {item.name}
                         </h2>
                         <Link href={`/${item.url_slug}`}>
@@ -138,8 +138,8 @@ const Clientcourses = ({ params }) => {
           </div>
         </section>
 
-        <section className="text-gray-600 body-font shadow-md bg-gray-100 dark:bg-slate-800 text-center pt-16">
-          <h1 className="text-black sm:text-3xl text-2xl text-center title-font text-gray-900 dark:text-white mb-5 font-bold">
+        <section className="text-gray-600 body-font shadow-md bg-gray-100  text-center pt-16">
+          <h1 className="text-black sm:text-3xl text-2xl text-center title-font  mb-5 font-bold">
             Most Popular Instructors in {category?.name}
           </h1>
           <div className="container px-5 py-2 mx-auto">
@@ -147,7 +147,7 @@ const Clientcourses = ({ params }) => {
               {instructors.length > 0 &&
                 instructors.slice(0, 8).map((x, index) => (
                   <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                    <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all hover:-translate-y-2">
+                    <div className="bg-white  rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition-all hover:-translate-y-2">
                       <Link href='' className="block relative h-40 rounded overflow-hidden">
                         <Image
                           alt="instructor"
@@ -159,7 +159,7 @@ const Clientcourses = ({ params }) => {
                         />
                       </Link>
                       <div className="p-6">
-                        <h3 className="text-lg tracking-widest title-font text-black dark:text-white font-bold">
+                        <h3 className="text-lg tracking-widest title-font text-black  font-bold">
                           {x.name}
                         </h3>
                       </div>

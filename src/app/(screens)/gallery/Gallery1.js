@@ -80,7 +80,7 @@ const Gallery1 = () => {
                                     </Link>
                                 </div>
                                 <div className="">
-                                    <p className="text-base text-[#308AFF] font-normal dark:text-neutral-200">
+                                    <p className="text-base text-[#308AFF] font-normal ">
                                         {item.title}
                                     </p>
                                 </div>

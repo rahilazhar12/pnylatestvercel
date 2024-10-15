@@ -387,10 +387,10 @@ const Coursedetail = ({ params }) => {
 
         <div>
           <div className="flex flex-col text-center lg:text-left lg:w-2/3 mx-auto mb-5 mt-5 justify-center">
-            <h1 className="text-4xl  font-extrabold text-gray-900 dark:text-white mb-4 text-center">
+            <h1 className="text-4xl  font-extrabold text-gray-900  mb-4 text-center">
               Course Module
             </h1>
-            <p className="leading-relaxed  text-gray-900 dark:text-white text-center">
+            <p className="leading-relaxed  text-gray-900  text-center">
               Our course modules offer a well-rounded curriculum, combining
               theoretical foundations with hands-on training, ensuring students
               acquire industry-relevant skills and knowledge for future
@@ -423,7 +423,7 @@ const Coursedetail = ({ params }) => {
 
             {/* Module Details */}
             <div className="col-span-3 md:col-span-3 overflow-y-auto ">
-              <div className="text-lg dark:text-white md:text-2xl lg:text-3xl xl:text-3xl font-bold text-black mb-5 p-4">
+              <div className="text-lg  md:text-2xl lg:text-3xl xl:text-3xl font-bold text-black mb-5 p-4">
                 Key Features of this Course
               </div>
               <div className="space-y-2">
@@ -436,7 +436,7 @@ const Coursedetail = ({ params }) => {
                           if (domNode.name === "ul") {
                             const props = {
                               className:
-                                "list-disc dark:text-white p-4 flex flex-col space-y-3",
+                                "list-disc  p-4 flex flex-col space-y-3",
                             };
                             return (
                               <p {...props}>{domToReact(domNode.children)}</p>
@@ -568,7 +568,7 @@ const Coursedetail = ({ params }) => {
         <section>
           <div className="bg-white p-6">
             <div className="border-b border-gray-200 mb-4">
-              <h3 className="text-lg font-semibold dark:text-black">OVERVIEW</h3>
+              <h3 className="text-lg font-semibold ">OVERVIEW</h3>
             </div>
             {/* Check if instructor exists, else show "No data" */}
             {instructor ? (
@@ -587,7 +587,7 @@ const Coursedetail = ({ params }) => {
                       alt=""
                     />
                   </div>
-                  <p className="mt-2 text-sm font-semibold dark:text-black">Instructor</p>
+                  <p className="mt-2 text-sm font-semibold ">Instructor</p>
                 </div>
 
                 {/* Description */}
@@ -598,10 +598,10 @@ const Coursedetail = ({ params }) => {
                       alt=""
                     />
                   </div>
-                  <h4 className="text-xl font-semibold mb-2 max-sm:text-center dark:text-black">
+                  <h4 className="text-xl font-semibold mb-2 max-sm:text-center ">
                     {instructor.name}
                   </h4>
-                  <p className="text-gray-700 text-justify max-sm:text-center dark:text-black">
+                  <p className="text-gray-700 text-justify max-sm:text-center ">
                     {instructor.other_info}
                   </p>
                 </div>
@@ -638,7 +638,7 @@ const Coursedetail = ({ params }) => {
                       className="p-4 bg-[#EEFFFB] hover:bg-blue-200 cursor-pointer"
                     >
                       <Link href={`/${course.url_slug}`}>
-                        <span className="dark:text-black"> {course.name}</span>
+                        <span className=""> {course.name}</span>
                       </Link>
                     </div>
                   ))}
@@ -658,13 +658,13 @@ const Coursedetail = ({ params }) => {
           }}
         >
           <div className="grid justify-center lg:p-28 md:p-20 max-sm:p-5 ">
-            <div className="lg:text-5xl lg:w-[778px]  max-sm:p- font-bold text-center dark:text-black">
+            <div className="lg:text-5xl lg:w-[778px]  max-sm:p- font-bold text-center ">
               Admissions are open for the fresh batch. Let’s grow together!
             </div>
             <div className="text-center lg:p-4 max-sm:mt-2">
               <Link href="https://lms.pnytraining.com/">
                 {" "}
-                <button className="bg-[#49B2DF] lg:w-48 lg:h-14 text-white rounded max-sm:w-36 max-sm:h-10 dark:text-white">
+                <button className="bg-[#49B2DF] lg:w-48 lg:h-14 text-white rounded max-sm:w-36 max-sm:h-10 ">
                   Enroll Now!
                 </button>{" "}
               </Link>

@@ -47,17 +47,17 @@ const Client = () => {
       if (domNode.type === "tag") {
         if (domNode.name === "p") {
           // Adding responsive padding and text alignment classes
-          const props = { className: "px-4 sm:px-32 py-2 text-justify dark:text-white" };
+          const props = { className: "px-4 sm:px-32 py-2 text-justify " };
           return <p {...props}>{domToReact(domNode.children)}</p>;
         }
         if (domNode.name === "h3") {
           // Adjusting padding and font size for smaller screens
-          const props = { className: "p-3 sm:p-5 text-base sm:text-lg dark:text-white" };
+          const props = { className: "p-3 sm:p-5 text-base sm:text-lg " };
           return <p {...props}>{domToReact(domNode.children)}</p>;
         }
         if (domNode.name === "ul") {
           // Adjusting padding for smaller screens
-          const props = { className: "p-3 sm:p-5 dark:text-white" };
+          const props = { className: "p-3 sm:p-5 " };
           return <p {...props}>{domToReact(domNode.children)}</p>;
         }
       }

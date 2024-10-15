@@ -38,20 +38,20 @@ const Graphicdesigncoursesialkot1 = () => {
         if (domNode.type === "tag") {
           // For example, add a class to all <p> elements
           if (domNode.name === "p") {
-            const props = { className: "p-5 dark:text-white text-justify" };
+            const props = { className: "p-5  text-justify" };
             return <p {...props}>{domToReact(domNode.children)}</p>;
           }
           if (domNode.name === "h3") {
-            const props = { className: "p-5 text-lg dark:text-white" };
+            const props = { className: "p-5 text-lg " };
             return <p {...props}>{domToReact(domNode.children)}</p>;
           }
           if (domNode.name === "ul") {
-            const props = { className: "p-5 dark:text-white" };
+            const props = { className: "p-5 " };
             return <p {...props}>{domToReact(domNode.children)}</p>;
           }
           if (domNode.name === "h2" && isFirstH2) {
             const props = {
-              className: "text-[#013E6D] p-5 font-bold text-4xl dark:text-white",
+              className: "text-[#013E6D] p-5 font-bold text-4xl ",
             };
             isFirstH2 = false; // Update the flag after processing the first h2
             return <h2 {...props}>{domToReact(domNode.children)}</h2>;

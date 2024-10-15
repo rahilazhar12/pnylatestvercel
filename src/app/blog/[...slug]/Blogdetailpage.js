@@ -67,11 +67,11 @@ const Blogdetails = ({ params }) => {
 
   return (
     <>
-      <main>
+      <main className='bg-white text-black'>
 
 
         <section>
-          <div className="bg-gray-800 text-white p-6 min-h-auto">
+          <div className="p-6 min-h-auto">
             <div className="container mx-auto">
               <div className="flex flex-wrap justify-around items-center">
                 {/* <!-- Text section --> */}

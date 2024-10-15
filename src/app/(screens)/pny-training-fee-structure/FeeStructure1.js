@@ -104,11 +104,11 @@ const FeeStructure1 = () => {
         <header className="text-gray-600 body-font shadow-lg">
           <div className="container mx-auto flex flex-wrap py-2 flex-col md:flex-row items-center">
             <Link href="#" className="flex title-font font-medium items-center text-gray-900 mb-2 md:mb-0">
-              <span className="ml-3 text-sm text-gray-800 dark:text-white">Home</span>
-              <svg class="w-2 h-2 text-gray-800 dark:text-white mx-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+              <span className="ml-3 text-sm text-gray-800 ">Home</span>
+              <svg class="w-2 h-2 text-gray-800  mx-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
               </svg>
-              <span className="ml-3 text-sm text-red-500 dark:text-white">Fee Structure</span>
+              <span className="ml-3 text-sm text-red-500 ">Fee Structure</span>
             </Link>
           </div>
         </header>
@@ -120,7 +120,7 @@ const FeeStructure1 = () => {
         <section className="text-gray-600 body-font">
           <div className="container px-4 py-10 mx-auto">
             <div className="flex flex-col sm:flex-row justify-between items-center w-full">
-              <h1 className="text-2xl font-bold text-black dark:text-white">Fee Structure</h1>
+              <h1 className="text-2xl font-bold text-black ">Fee Structure</h1>
               <div>
                 <a href="https://lms.pnytraining.com/" target="_blank" rel="noopener noreferrer">
                   <button className="px-4 py-2 text-blue-500 font-medium border border-blue-500 rounded-xl hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-in-out">
@@ -142,7 +142,7 @@ const FeeStructure1 = () => {
 
         <div className='container'>
           <div data-tabs-toggle={parentTabContentSelector}>
-            <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
+            <div className="mb-4 border-b border-gray-200 ">
 
               <ul className="flex  flex-wrap text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                 <li role="presentation">
@@ -195,7 +195,7 @@ const FeeStructure1 = () => {
 
               </div>
               {/* <div className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                <p className="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong className="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong className="font-medium text-gray-800 ">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
               </div> */}
 
 
@@ -241,7 +241,7 @@ const FeeStructure1 = () => {
           {isloading ? <p>Loading courses...</p> : courses.length > 0 ? (
             <div className="overflow-x-auto shadow-md sm:rounded-lg">
               <table className="min-w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50  dark:text-gray-400">
                   <tr>
                     <th scope="col" className="p-4">
                       Serial No
@@ -259,11 +259,11 @@ const FeeStructure1 = () => {
                 </thead>
                 <tbody>
                   {courses.map((course, index) => (
-                    <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" key={course.Program_Id}>
+                    <tr className="bg-white border-b dark:bg-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600" key={course.Program_Id}>
                       <td className="px-4 py-3">
                         {index + 1}
                       </td>
-                      <td className="px-6 py-4 font-medium text-gray-900 dark:text-white">
+                      <td className="px-6 py-4 font-medium text-gray-900 ">
                         {course.Program_Name}
                       </td>
                       <td className="px-6 py-4">

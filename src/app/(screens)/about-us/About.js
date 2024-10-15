@@ -79,15 +79,15 @@ const About = () => {
           {/* Section-2 */}
           <section className="grid lg:grid-cols-12 gap-4 lg:h-auto md:mt-5 px-4 md:px-10">
             <div className="col-span-6 flex flex-col justify-center p-4 lg:p-10">
-              <h2 className="text-3xl max-sm:text-center lg:text-[42px] font-bold text-gray-900 dark:text-white">
+              <h2 className="text-3xl max-sm:text-center lg:text-[42px] font-bold text-gray-900 ">
                 Who we are?
               </h2>
-              <h3 className="text-2xl max-sm:text-center lg:text-[26px] font-bold text-red-600 dark:text-white mt-3">
+              <h3 className="text-2xl max-sm:text-center lg:text-[26px] font-bold text-red-600  mt-3">
                 PNY Trainings: A renowned IT Training institute in Pakistan since
                 2014
               </h3>
 
-              <p className="text-lg lg:text-[20px] text-gray-700 dark:text-white text-justify max-sm:text-center mt-4">
+              <p className="text-lg lg:text-[20px] text-black  text-justify max-sm:text-center mt-4">
                 Offering professional IT diplomas and short courses for students
                 and professionals seeking career growth. As pioneers in
                 comprehensive training, we have helped thousands of students
@@ -167,7 +167,7 @@ const About = () => {
           {/* Section-4 */}
           <section className=" xl:h-auto lg:h-auto md:h-auto max-sm:h-auto p-5 max-sm:p-2">
             <div className="flex justify-center">
-              <p className="text-[18px] sm:text-[30px] md:font-bold lg:text-[42px] text-center font-bold dark:text-white w-full px-4 lg:w-[1084px]">
+              <p className="text-[18px] sm:text-[30px] text-black md:font-bold lg:text-[42px] text-center font-bold  w-full px-4 lg:w-[1084px]">
                 Wahab Yunus, as the CEO of PNY Trainings, is unlocking the
                 potential in youth to be victorious.
               </p>
@@ -204,14 +204,14 @@ const About = () => {
           </section>
 
           {/* section-5 */}
-          <section className=" bg-white dark:bg-slate-800 ring-1 ring-slate-900/5   lg:p-5 lg:mt-10">
+          <section className=" bg-white text-black lg:p-5 lg:mt-10">
             <div
-              className="howwework font-bold text-center md:text-2xl lg:text-4xl dark:text-white max-sm:text-2xl"
+              className="howwework font-bold text-center md:text-2xl lg:text-4xl  max-sm:text-2xl"
               id="abc"
             >
               We Connect, We Grow Together
             </div>
-            <div className="howwework text-center max-sm:p-2 lg:p-3 lg:mb-10 dark:text-white">
+            <div className="howwework text-center max-sm:p-2 lg:p-3 lg:mb-10 ">
               We consider your part to empower, develop, and embrace the everyday
               chore.
             </div>
@@ -220,13 +220,13 @@ const About = () => {
                 aboutdata.map((data, index) => {
                   return (
                     <React.Fragment key={index}>
-                      <div className="stats shadow-xl hover:bg-blue-500 hover:text-white">
+                      <div className="stats shadow-xl bg-white text-black hover:bg-blue-500 hover:text-white">
                         <div className="stat">
                           <div className="img flex justify-center">
                             <Image className='h-16' src={data.imgSrc} alt="" />
                           </div>
-                          <div className="text-center text-xl font-bold dark:text-white">{data.title}</div>
-                          <div className="text-center dark:text-white">{data.description}</div>
+                          <div className="text-center text-xl font-bold ">{data.title}</div>
+                          <div className="text-center ">{data.description}</div>
                         </div>
                       </div>
                     </React.Fragment>
