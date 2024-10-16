@@ -100,7 +100,7 @@ const FeeStructure1 = () => {
 
   return (
     <>
-      <div>
+      <div className='bg-white text-black'>
         <header className="text-gray-600 body-font shadow-lg">
           <div className="container mx-auto flex flex-wrap py-2 flex-col md:flex-row items-center">
             <Link href="#" className="flex title-font font-medium items-center text-gray-900 mb-2 md:mb-0">

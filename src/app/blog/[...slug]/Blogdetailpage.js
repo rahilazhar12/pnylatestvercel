@@ -70,7 +70,7 @@ const Blogdetails = ({ params }) => {
       <main className='bg-white text-black'>
 
 
-        <section>
+        <section className='bg-gray-200'>
           <div className="p-6 min-h-auto">
             <div className="container mx-auto">
               <div className="flex flex-wrap justify-around items-center">

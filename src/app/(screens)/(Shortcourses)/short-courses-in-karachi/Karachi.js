@@ -106,7 +106,7 @@ const Karachi = () => {
                 <img className='w-full' src={courses.page_image} alt="" />
             </div>
 
-            {courses.page_description && parsedDescription}
+            <div className='bg-white text-black'>{courses.page_description && parsedDescription}</div>
         </>
     )
 }
