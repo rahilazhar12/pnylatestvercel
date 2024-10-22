@@ -2,7 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['www.admin777.pny-trainings.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.admin777.pny-trainings.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
     unoptimized: false,
   },
 };
