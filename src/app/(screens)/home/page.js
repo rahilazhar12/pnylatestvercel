@@ -390,16 +390,16 @@ const ClientComponent = () => {
                 </section>
 
                 {/* Section-10 */}
-                <section className="flex justify-center items-center flex-col p-3 space-y-3 bg-white text-black">
+                {/* <section className="flex justify-center items-center flex-col p-3 space-y-3 bg-white text-black">
                     <div className="lgh ">Leaders of Youth</div>
                     <div className="lgp ">
                         PNY Trainings' CEO and Director are visionary leaders, inspiring youth
                         on a transformative journey toward a promising future, making a path
                         to success and prosperity.
                     </div>
-                </section>
+                </section> */}
 
-                <div className="flex  justify-center p-5 max-sm:p-4 bg-white">
+                {/* <div className="flex  justify-center p-5 max-sm:p-4 bg-white">
                     <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4">
                         {ownersdata.map((items, index) => (
                             <div
@@ -421,13 +421,13 @@ const ClientComponent = () => {
                                         {items.designation}
                                     </p>
                                     <p className="mb-4 text-base text-blue-500 ">
-                                        {/* {items.twitter} <span className='ml-5'>{items.linkdin}</span> */}
+                                      
                                     </p>
                                 </div>
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
 
                 {/* Section-11 */}
@@ -451,12 +451,13 @@ const ClientComponent = () => {
 
 
                 {/* Section-12 */}
-                <section className="bg-[#F9FAFB] h-auto text-black">
+                {/* Section-12 */}
+                <section className="bg-[#F9FAFB] h-auto">
                     <div className="grid justify-center lg:p-10">
-                        <div className=" lgh   max-sm:mt-10 ">
+                        <div className=" lgh  dark:text-black max-sm:mt-10 ">
                             Our Collaborations
                         </div>
-                        <div className=" lgp max-sm:p-3 md:px-10 md:py-2 ">
+                        <div className=" lgp max-sm:p-3 md:px-10 md:py-2 dark:text-black">
                             Discover the strength of our network as we join hands with key
                             partners to innovate and create impactful digital learning
                             experiences for today's youth.
@@ -491,11 +492,11 @@ const ClientComponent = () => {
 
                 {/* Section-14 */}
                 <section>
-                    <div className="grid justify-center bg-white text-black">
-                        <div className="lgh  max-sm:mt-5">
+                    <div className="grid justify-center lg:mt-10">
+                        <div className="lgh dark:text-white max-sm:mt-5">
                             We Empower Professionals; see through Media Partner Networks
                         </div>
-                        <div className="lgp max-sm:p-3 md:px-10 md:py-2 ">
+                        <div className="lgp max-sm:p-3 md:px-10 md:py-2 dark:text-white">
                             PNY Trainings encourage the opinions of youth by developing them
                             professionally, trusting their abilities as leaders, and getting
                             them excited to explore the world around them.
@@ -507,6 +508,7 @@ const ClientComponent = () => {
                         </div>
                     </div>
                 </section>
+
 
 
 
