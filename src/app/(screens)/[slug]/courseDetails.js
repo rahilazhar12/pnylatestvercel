@@ -224,30 +224,49 @@ const Coursedetail = ({ params }) => {
         </div>
       </div>
 
-      <section className="hidden sm:block p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14 bg-white text-black">
-        <div className="grid grid-cols-1 md:grid-cols-4 border rounded-lg w-full mx-auto shadow-lg lg:h-[450px] md:h-[450px] ">
+      <section className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14 bg-white text-black">
+        <div className="grid grid-cols-1 md:grid-cols-4 border rounded-lg w-full mx-auto shadow-lg lg:h-[450px] md:h-[450px]">
           {/* Module List */}
           <div className="border md:w-[172px] w-full overflow-y-auto">
-            {modules.map((module, index) => (
-              <div
-                key={module.id}
-                className={`h-auto md:h-[113px] flex border border-black/25 shadow-lg justify-center items-center ${selectedModuleId === module.id
-                  ? "bg-blue-500 text-white"
-                  : "bg-white"
-                  }`}
-                onClick={() => handleModuleClick(module.id)}
-              >
-                {module.title}{" "}
-                <span className="ml-3">
-                  <i className="fa-solid fa-arrow-right"></i>
-                </span>
+            {modules.map((module) => (
+              <div key={module.id}>
+                <div
+                  className={`h-auto md:h-[113px] flex border border-black/25 shadow-lg justify-center items-center ${selectedModuleId === module.id ? "bg-blue-500 text-white" : "bg-white"}`}
+                  onClick={() => handleModuleClick(module.id)}
+                >
+                  {module.title}{" "}
+                  <span className="ml-3">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+
+                {/* Conditional Rendering for Module Details on Mobile */}
+                {selectedModuleId === module.id && (
+                  <div className="block md:hidden">
+                    <div className="text-lg font-bold text-black mb-5 p-4">
+                      Key Features of this Course
+                    </div>
+                    <div className="space-y-2">
+                      {parse(module.key_features, {
+                        replace: (domNode) => {
+                          if (domNode.type === "tag" && domNode.name === "ul") {
+                            const props = {
+                              className: "list-disc p-4 flex flex-col space-y-3",
+                            };
+                            return <p {...props}>{domToReact(domNode.children)}</p>;
+                          }
+                        },
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
 
-          {/* Module Details */}
-          <div className="col-span-3 md:col-span-3 overflow-y-auto ">
-            <div className="text-lg  md:text-2xl lg:text-3xl xl:text-3xl font-bold text-black mb-5 p-4">
+          {/* Module Details for Desktop */}
+          <div className="hidden md:block col-span-3 overflow-y-auto">
+            <div className="text-lg md:text-2xl lg:text-3xl xl:text-3xl font-bold text-black mb-5 p-4">
               Key Features of this Course
             </div>
             <div className="space-y-2">
@@ -256,16 +275,11 @@ const Coursedetail = ({ params }) => {
                 .map((module) =>
                   parse(module.key_features, {
                     replace: (domNode) => {
-                      if (domNode.type === "tag") {
-                        if (domNode.name === "ul") {
-                          const props = {
-                            className:
-                              "list-disc  p-4 flex flex-col space-y-3",
-                          };
-                          return (
-                            <p {...props}>{domToReact(domNode.children)}</p>
-                          );
-                        }
+                      if (domNode.type === "tag" && domNode.name === "ul") {
+                        const props = {
+                          className: "list-disc p-4 flex flex-col space-y-3",
+                        };
+                        return <p {...props}>{domToReact(domNode.children)}</p>;
                       }
                     },
                   })
@@ -274,6 +288,7 @@ const Coursedetail = ({ params }) => {
           </div>
         </div>
       </section>
+
 
       <section>
         <div className="bg-blue-50 py-10">

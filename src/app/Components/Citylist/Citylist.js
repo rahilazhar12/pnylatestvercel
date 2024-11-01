@@ -20,7 +20,7 @@ const CityList = () => {
   }, []);
 
   return (
-    <div className="md:col-span-1 lg:col-span-1 p-4 bg-green-100 h-[500px] max-sm:h-auto rounded-lg max-sm:mb-2">
+    <div className="md:col-span-1 lg:col-span-1 p-4 bg-green-100 md:h-[550px] max-sm:h-auto rounded-lg max-sm:mb-2">
       <h3 className="font-bold text-lg mb-2 bg-blue-900 text-white p-2 rounded">
         COURSES WE OFFER IN CITIES
       </h3>
