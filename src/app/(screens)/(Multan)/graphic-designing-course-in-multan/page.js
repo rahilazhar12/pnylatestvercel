@@ -1,4 +1,4 @@
-import Graphicmultan from "./graphicmultan";
+import Graphicmultan from "./Graphicmultan";
 
 
 
