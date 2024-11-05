@@ -94,7 +94,7 @@ const Footer = () => {
                     </p>
                 </aside>
                 <nav className="max-sm:text-sm">
-                    <header className=" text-black font-bold  ">
+                    <header className=" text-black font-bold text-lg">
                         Quick Link
                     </header>
                     <Link href="/faqs" className="hover:text-blue-500">
@@ -130,7 +130,7 @@ const Footer = () => {
                 </nav>
 
                 <div>
-                    <h1 className="text-black font-bold ">
+                    <h1 className="text-black font-bold text-lg">
                         Courses Offered
                     </h1>
                     <ul className="space-y-3">
@@ -143,7 +143,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-black font-bold ">
+                    <h1 className="text-black font-bold text-lg">
                         Language Courses
                     </h1>
                     <ul className="space-y-2">
@@ -156,7 +156,7 @@ const Footer = () => {
                 </div>
 
                 <nav>
-                    <h1 className="text-black font-bold ">
+                    <h1 className="text-black font-bold text-lg">
                         Short Courses
                     </h1>
 
@@ -226,7 +226,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div>
                         <Image src={arfatower} alt="Arfa Tower" className="mb-2" />
-                        <h2 className="text-black font-bold ">
+                        <h2 className="text-black font-bold text-lg">
                             Arfa Tower (Head Office)
                         </h2>
                         <p>
@@ -234,19 +234,22 @@ const Footer = () => {
                             Road, Lahore
                         </p>
                     </div>
+
                     <div>
                         <Image src={iqbaltown} alt="Iqbal Town" className="mb-2" />
-                        <h2 className="text-black font-bold ">Iqbal Town</h2>
+                        <h2 className="text-black font-bold text-lg">Iqbal Town</h2>
                         <p>743 B Kashmir Block Allama Iqbal Town, Lahore</p>
                     </div>
+
                     <div>
                         <Image src={johartown} alt="Johar Town" className="mb-2" />
-                        <h2 className="text-black font-bold ">Johar Town</h2>
+                        <h2 className="text-black font-bold text-lg">Johar Town</h2>
                         <p>
                             1st Floor 256 / A, Block R2 Near Shaukat Khanam Hospital, next
                             to Standard Chartered, Lahore
                         </p>
                     </div>
+
                     <div>
                         <Image
                             className="rounded-full mb-2"
@@ -254,7 +257,7 @@ const Footer = () => {
                             alt="Rawalpindi"
                             width={60}
                         />
-                        <h2 className="text-black font-bold ">
+                        <h2 className="text-black font-bold text-lg">
                             Shahdara Branch
                         </h2>
                         <p>
@@ -265,7 +268,7 @@ const Footer = () => {
 
                     <div>
                         <Image src={rawal} alt="Rawalpindi" className="mb-2" />
-                        <h2 className="text-black font-bold ">Rawalpindi</h2>
+                        <h2 className="text-black font-bold text-lg">Rawalpindi</h2>
                         <p>
                             Office # 102, Floor #1 Talha Heights Plot # 21-D, 6th Road
                             Satellite Town, Rawalpindi
@@ -274,7 +277,7 @@ const Footer = () => {
 
                     <div>
                         <Image src={multan} alt="Multan" className="mb-2" />
-                        <h2 className="text-black font-bold ">Multan</h2>
+                        <h2 className="text-black font-bold text-lg">Multan</h2>
                         <p>237-B, Model Town, Main Boulevard, Multan</p>
                     </div>
 
@@ -285,7 +288,7 @@ const Footer = () => {
                             alt="Rawalpindi"
                             width={60}
                         />
-                        <h2 className="text-black font-bold ">
+                        <h2 className="text-black font-bold text-lg">
                             Sargodha Branch
                         </h2>
                         <p>
@@ -299,7 +302,7 @@ const Footer = () => {
                             alt="Rawalpindi"
                             width={60}
                         />
-                        <h2 className="text-black font-bold ">Saudi Arabia</h2>
+                        <h2 className="text-black font-bold text-lg">Saudi Arabia</h2>
                         <p>
                             Office No. 7, 1st Floor, ALJMAZ Building Prince Sultan Bin
                             Abdulaziz Rd, Above Dunkin Donuts Al Olaya, Riyadh 12221

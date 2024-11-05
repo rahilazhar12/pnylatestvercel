@@ -146,9 +146,10 @@ const Coursedetail = ({ params }) => {
             <div className="flex flex-wrap justify-between items-center">
               {/* Text section */}
               <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold mb-4">
-                  {courseData ? courseData.name : null}
-                </h2>
+                <h1 className="text-3xl font-bold mb-4">
+                  {courseData ? courseData.name : ""}
+                </h1>
+
                 <p className="mb-4">
                   {courseData ? courseData.description_short : null}
                 </p>
@@ -211,11 +212,11 @@ const Coursedetail = ({ params }) => {
       </div>
 
       {/* Module */}
-      <div className="bg-white text-black">
+      <div className="bg-white text-black md:mt-5">
         <div className="flex flex-col text-center lg:text-left lg:w-2/3 mx-auto mb-5 md:mb-0  justify-center">
-          <h1 className="text-4xl  font-extrabold  mb-4 text-center">
+          <h2 className="text-2xl  font-extrabold  mb-4 text-center">
             Course Module
-          </h1>
+          </h2>
           <p className="leading-relaxed text-center">
             Our course modules offer a well-rounded curriculum, combining
             theoretical foundations with hands-on training, ensuring students
