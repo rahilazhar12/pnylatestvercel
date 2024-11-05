@@ -84,7 +84,7 @@ const Freelancingcourse1 = () => {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 mt-10 max-sm:mt-0">
+      <div className="container mx-auto px-4 mt-10 max-sm:mt-0 bg-white text-black">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           {/* Left side: Image and Content */}
           <div className="md:col-span-2 lg:col-span-3">

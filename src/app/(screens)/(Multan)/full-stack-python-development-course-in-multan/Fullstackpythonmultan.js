@@ -5,7 +5,7 @@ import parse, { domToReact } from "html-react-parser";
 import CityList from "@/app/Components/Citylist/Citylist";
 import gif from '../../../assets/image/gif.gif';
 import Image from "next/image";
-const Ecommercemultan = () => {
+const Fullstackpythonmultan = () => {
     const [data, setData] = useState({});
     const [isLoading, setIsLoading] = useState(true);
 
@@ -14,7 +14,7 @@ const Ecommercemultan = () => {
             setIsLoading(true);
             try {
                 let response = await axios.get(
-                    `https://www.admin777.pny-trainings.com/api/city/specialpage/${'ecommerce-marketing-course-in-multan'}`
+                    `https://www.admin777.pny-trainings.com/api/city/specialpage/${'full-stack-python-development-course-in-multan'}`
                 );
                 setData(response.data);
                 setIsLoading(false);
@@ -104,4 +104,4 @@ const Ecommercemultan = () => {
     );
 };
 
-export default Ecommercemultan;
+export default Fullstackpythonmultan;

@@ -38,6 +38,13 @@ const Header = () => {
                             {/* Primary nav */}
                             <div className="hidden lg:flex items-center space-x-1 lg:text-xs xl:text-sm relative xl:left-52">
                                 <Link
+                                    href="http://www.pnyadvertising.com"
+                                    target="_blank"
+                                    className="py-5 px-1 hover:underline"
+                                >
+                                    Digital Services
+                                </Link>
+                                <Link
                                     href="https://eraflip.com/"
                                     target="_blank"
                                     className="py-5 px-1 hover:underline"
@@ -114,6 +121,15 @@ const Header = () => {
                         isMobileMenuOpen ? "mobile-menu block" : "mobile-menu hidden"
                     }
                 >
+                    
+                    <Link
+                        href="http://www.pnyadvertising.com"
+                        target="_blank"
+                        className="block py-2 px-4 text-sm hover:bg-gray-700"
+                        onClick={toggleMobileMenu}
+                    >
+                        Digital Services
+                    </Link>
                     <Link
                         href="https://eraflip.com/"
                         target="_blank"
