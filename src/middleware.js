@@ -8,10 +8,10 @@ export function middleware(req) {
   const nonExistentPaths = [
     '/2d-3d-animation-course-in-lahore',
     '/blog/business/5-easy-ways-to-make-money-online-from-home.txt',
-    '/https://www.pnytrainings.com/course/private-label-and-wholesale-business-on-amazon-course-in-lahore-pakistan',
-    '/https://www.pnytrainings.com/blog/marketing/impact-of-corona-virus-on-search-marketing.html',
-    '/https://www.pnytrainings.com/gallery-image/19',
-    '/https://www.pnytrainings.com/news-detail/22',
+    '/private-label-and-wholesale-business-on-amazon-course-in-lahore-pakistan',
+    '/blog/marketing/impact-of-corona-virus-on-search-marketing.html',
+    '/gallery-image/19',
+    '/news-detail/22',
 
 
   ];
