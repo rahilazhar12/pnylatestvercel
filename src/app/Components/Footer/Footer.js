@@ -156,9 +156,9 @@ const Footer = () => {
                 </div>
 
                 <nav>
-                    <h1 className="text-black font-bold text-lg">
+                    <h3 className="text-black font-bold text-lg">
                         Short Courses
-                    </h1>
+                    </h3>
 
                     <div className="flex flex-col space-y-2 ">
                         <Link
@@ -226,9 +226,9 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div>
                         <Image src={arfatower} alt="Arfa Tower" className="mb-2" />
-                        <h2 className="text-black font-bold text-lg">
+                        <h3 className="text-black font-bold text-lg">
                             Arfa Tower (Head Office)
-                        </h2>
+                        </h3>
                         <p>
                             Office 1, Level #14, Arfa Software Technology Park, Ferozepur
                             Road, Lahore
@@ -237,7 +237,7 @@ const Footer = () => {
 
                     <div>
                         <Image src={iqbaltown} alt="Iqbal Town" className="mb-2" />
-                        <h2 className="text-black font-bold text-lg">Iqbal Town</h2>
+                        <h3 className="text-black font-bold text-lg">Iqbal Town</h3>
                         <p>743 B Kashmir Block Allama Iqbal Town, Lahore</p>
                     </div>
 
@@ -257,9 +257,9 @@ const Footer = () => {
                             alt="Rawalpindi"
                             width={60}
                         />
-                        <h2 className="text-black font-bold text-lg">
+                        <h3 className="text-black font-bold text-lg">
                             Shahdara Branch
-                        </h2>
+                        </h3>
                         <p>
                             Office#1, Floor#2, Al-Habib Bank, Phool Mandi, Al Saeed Chowk
                             Saggian, Bypass Lahore-Jaranwala Rd, Lahore, Pakistan
@@ -268,7 +268,7 @@ const Footer = () => {
 
                     <div>
                         <Image src={rawal} alt="Rawalpindi" className="mb-2" />
-                        <h2 className="text-black font-bold text-lg">Rawalpindi</h2>
+                        <h3 className="text-black font-bold text-lg">Rawalpindi</h3>
                         <p>
                             Office # 102, Floor #1 Talha Heights Plot # 21-D, 6th Road
                             Satellite Town, Rawalpindi
@@ -277,7 +277,7 @@ const Footer = () => {
 
                     <div>
                         <Image src={multan} alt="Multan" className="mb-2" />
-                        <h2 className="text-black font-bold text-lg">Multan</h2>
+                        <h3 className="text-black font-bold text-lg">Multan</h3>
                         <p>237-B, Model Town, Main Boulevard, Multan</p>
                     </div>
 

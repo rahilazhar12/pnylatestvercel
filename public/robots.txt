@@ -7,6 +7,7 @@ Disallow: /admin786/
 Disallow: /exam/
 Disallow: /admin786/assets/
 Disallow: /admin786/upload/
+Disallow: /_next/static/
 
 # Disallowed pages
 Disallow: /gallery
@@ -21,4 +22,4 @@ Disallow: /?_rsc=*
 Host: https://www.pnytrainings.com
 
 # Sitemaps
-Sitemap: https://www.pnytrainings.com/sitemap.xml 
+Sitemap: https://www.pnytrainings.com/sitemap.xml
