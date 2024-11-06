@@ -53,7 +53,7 @@ const Clientcity = ({ params }) => {
                 </div>
             </section>
 
-            <div className="grid lg:grid-cols-4 gap-3 p-3 container bg-white">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 p-3 container-xl bg-white">
                 {data.special_pages && data.special_pages.length > 0 ? (
                     data.special_pages.map((item) => {
                         return (
