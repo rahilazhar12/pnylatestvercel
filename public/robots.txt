@@ -7,7 +7,6 @@ Disallow: /admin786/
 Disallow: /exam/
 Disallow: /admin786/assets/
 Disallow: /admin786/upload/
-Disallow: /_next/static/
 
 # Disallowed pages
 Disallow: /gallery
