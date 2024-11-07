@@ -6,7 +6,6 @@ export function middleware(req) {
 
   // List of non-existent URLs
   const nonExistentPaths = [
-    '/2d-3d-animation-course-in-lahore',
     '/blog/business/5-easy-ways-to-make-money-online-from-home.txt',
     '/courses/private-label-and-wholesale-business-on-amazon-course-in-lahore-pakistan',
     '/blog/marketing/impact-of-corona-virus-on-search-marketing.html',
