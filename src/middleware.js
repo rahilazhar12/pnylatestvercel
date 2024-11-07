@@ -30,10 +30,10 @@ export function middleware(req) {
     (param) => !allowedQueryParams.includes(param)
   );
 
-  // if (hasDisallowedParams) {
-  //   const redirectUrl = new URL('/404', url.origin);
-  //   return NextResponse.redirect(redirectUrl);
-  // }
+  if (hasDisallowedParams) {
+    const redirectUrl = new URL('/404', url.origin);
+    return NextResponse.redirect(redirectUrl);
+  }
 
   // 3. Check if pathname ends with .html or .txt (except robots.txt)
   if (pathname !== '/robots.txt' && (pathname.endsWith('.html') || pathname.endsWith('.txt'))) {
