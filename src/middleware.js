@@ -12,6 +12,7 @@ export function middleware(req) {
     '/blog/marketing/impact-of-corona-virus-on-search-marketing.html',
     '/gallery-image/19',
     '/news-detail/22',
+    '/course/professional-red-hat-certified-system-administrator-course-in-lahore-pakistan',
 
 
   ];
