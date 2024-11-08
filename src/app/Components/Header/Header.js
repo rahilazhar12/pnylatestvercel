@@ -36,7 +36,7 @@ const Header = () => {
                             </div>
 
                             {/* Primary nav */}
-                            <div className="hidden lg:flex items-center space-x-1 lg:text-xs xl:text-sm relative xl:left-52">
+                            <div className="hidden lg:flex items-center space-x-1 lg:text-xs xl:text-sm relative md:left- xl:left-28">
                                 <Link
                                     href="http://www.pnyadvertising.com"
                                     target="_blank"
