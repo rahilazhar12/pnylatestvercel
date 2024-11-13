@@ -76,7 +76,7 @@ const Blogdetails = ({ params }) => {
               <div className="flex flex-wrap justify-around items-center">
                 {/* <!-- Text section --> */}
                 <div className="w-full lg:w-1/2 px-4">
-                  <h2 className="text-3xl font-bold mb-4 text-center sm:text-left">{data.title}</h2>
+                  <h1 className="text-3xl font-bold mb-4 text-center sm:text-left">{data.title}</h1>
                   <p className="mb-4 text-center sm:text-left">{data.description_short}</p>
                   <p className="text-center sm:text-left">Publish date: {data.published_date}</p>
                 </div>

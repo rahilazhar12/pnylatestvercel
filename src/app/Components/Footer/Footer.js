@@ -130,9 +130,9 @@ const Footer = () => {
                 </nav>
 
                 <div>
-                    <h1 className="text-black font-bold text-lg">
+                    <h3 className="text-black font-bold text-lg">
                         Courses Offered
-                    </h1>
+                    </h3>
                     <ul className="space-y-3">
                         {offeredCourses.slice(0, 5).map((course) => (
                             <li key={course.id} className="hover:text-blue-500">
@@ -143,9 +143,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-black font-bold text-lg">
+                    <h3 className="text-black font-bold text-lg">
                         Language Courses
-                    </h1>
+                    </h3>
                     <ul className="space-y-2">
                         {languageCourses.map((course) => (
                             <li key={course.id} className="hover:text-blue-500">
@@ -243,7 +243,7 @@ const Footer = () => {
 
                     <div>
                         <Image src={johartown} alt="Johar Town" className="mb-2" />
-                        <h2 className="text-black font-bold text-lg">Johar Town</h2>
+                        <h3 className="text-black font-bold text-lg">Johar Town</h3>
                         <p>
                             1st Floor 256 / A, Block R2 Near Shaukat Khanam Hospital, next
                             to Standard Chartered, Lahore
@@ -288,9 +288,9 @@ const Footer = () => {
                             alt="Rawalpindi"
                             width={60}
                         />
-                        <h2 className="text-black font-bold text-lg">
+                        <h3 className="text-black font-bold text-lg">
                             Sargodha Branch
-                        </h2>
+                        </h3>
                         <p>
                             Mawk Tech Space, 2nd Floor Ahsan Cash & Carry, near zafar ullah chowk Sargodha
                         </p>
@@ -302,7 +302,7 @@ const Footer = () => {
                             alt="Rawalpindi"
                             width={60}
                         />
-                        <h2 className="text-black font-bold text-lg">Saudi Arabia</h2>
+                        <h3 className="text-black font-bold text-lg">Saudi Arabia</h3>
                         <p>
                             Office No. 7, 1st Floor, ALJMAZ Building Prince Sultan Bin
                             Abdulaziz Rd, Above Dunkin Donuts Al Olaya, Riyadh 12221

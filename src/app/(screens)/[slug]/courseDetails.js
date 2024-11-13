@@ -214,9 +214,9 @@ const Coursedetail = ({ params }) => {
       {/* Module */}
       <div className="bg-white text-black md:mt-5">
         <div className="flex flex-col text-center lg:text-left lg:w-2/3 mx-auto mb-5 md:mb-0  justify-center">
-          <h2 className="text-2xl  font-extrabold  mb-4 text-center">
+          <h3 className="text-2xl  font-extrabold  mb-4 text-center">
             Course Module
-          </h2>
+          </h3>
           <p className="leading-relaxed text-center">
             Our course modules offer a well-rounded curriculum, combining
             theoretical foundations with hands-on training, ensuring students
@@ -294,9 +294,9 @@ const Coursedetail = ({ params }) => {
       <section>
         <div className="bg-blue-50 py-10">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold text-center text-black mb-6">
+            <h3 className="text-2xl font-bold text-center text-black mb-6">
               Access Complementary Benefits by Enrolling in this Course.
-            </h2>
+            </h3>
             <p className="text-center text-black w-auto max-sm:w-auto mx-auto mb-10">
               We discover your personal and professional growth capitalize on
               opportunities through which you will get profound impact on

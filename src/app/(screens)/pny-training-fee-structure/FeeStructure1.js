@@ -194,9 +194,7 @@ const FeeStructure1 = () => {
 
 
               </div>
-              {/* <div className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                <p className="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong className="font-medium text-gray-800 ">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-              </div> */}
+             
 
 
             </div>
@@ -240,8 +238,8 @@ const FeeStructure1 = () => {
 
           {isloading ? <p>Loading courses...</p> : courses.length > 0 ? (
             <div className="overflow-x-auto shadow-md sm:rounded-lg">
-              <table className="min-w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50  dark:text-gray-400">
+              <table className="min-w-full text-sm text-left text-gray-500 ">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50  ">
                   <tr>
                     <th scope="col" className="p-4">
                       Serial No
@@ -259,7 +257,7 @@ const FeeStructure1 = () => {
                 </thead>
                 <tbody>
                   {courses.map((course, index) => (
-                    <tr className="bg-white border-b dark:bg-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600" key={course.Program_Id}>
+                    <tr className="bg-white border-b text-black hover:bg-gray-50" key={course.Program_Id}>
                       <td className="px-4 py-3">
                         {index + 1}
                       </td>
