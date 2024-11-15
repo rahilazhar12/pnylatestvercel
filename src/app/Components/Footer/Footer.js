@@ -10,6 +10,8 @@ import shad from "../../assets/image/shad.webp";
 import temp from "../../assets/image/pny logo dark.jpg.png"
 import pnylogonew from "../../assets/image/PNY Trainings logo.png";
 import pnylogodark from "../../assets/image/pny logo dark.jpg.png";
+import saudf from "../../assets/image/saudiaf.png";
+import sgdf from "../../assets/image/sgdf.png";
 import Link from "next/link";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -284,7 +286,7 @@ const Footer = () => {
                     <div>
                         <Image
                             className="rounded-full mb-2"
-                            src={temp}
+                            src={sgdf}
                             alt="Rawalpindi"
                             width={60}
                         />
@@ -298,7 +300,7 @@ const Footer = () => {
                     <div>
                         <Image
                             className="rounded-full mb-2"
-                            src={temp}
+                            src={saudf}
                             alt="Rawalpindi"
                             width={60}
                         />
