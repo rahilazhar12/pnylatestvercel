@@ -55,7 +55,7 @@ const About = () => {
 
 
 
-      <main className="bg-white dark:bg-slate-800   ring-1 ring-slate-900/5 shadow-xl">
+      <main className="bg-white    ring-1 ring-slate-900/5 shadow-xl">
         <motion.div
           variants={containerVariants}
           initial="hidden"
