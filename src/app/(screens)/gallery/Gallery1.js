@@ -70,10 +70,10 @@ const Gallery1 = () => {
                     </div>
                 </section>
 
-                <section>
+                <section className='bg-white'>
                     <div className='grid xl:grid-cols-3 xl:ml-10 lg:grid-cols-3 p-5 md:grid-cols-2 gap-3'>
                         {image.map((item) => (
-                            <div key={item.id} className="block border border-[#308AFF] xl:w-[398px] lg:w-[300px] md:w-[350px] p-4 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                            <div key={item.id} className="block border border-[#308AFF] xl:w-[398px] lg:w-[300px] md:w-[350px] p-4 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
                                     <Link href={`/gallerydetail/${item.id}`}>
                                         <img className="rounded-t-lg" src={item.gallery_image} alt={item.description} loading='lazy' />

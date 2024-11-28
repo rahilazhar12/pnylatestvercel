@@ -69,7 +69,7 @@ const BestInstituteInLahore = () => {
         <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold text-center my-4">{page.page_title}</h1>
             <img src={page.page_image} alt="Page" className="w-full h-auto rounded-lg shadow-md my-4" />
-            <div className="prose prose-lg">
+            <div className="prose prose-lg bg-white text-black">
                 {parsedDescription}
             </div>
         </div>

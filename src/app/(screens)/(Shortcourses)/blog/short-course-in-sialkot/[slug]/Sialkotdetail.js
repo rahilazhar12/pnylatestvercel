@@ -76,7 +76,7 @@ const Sialkotdetails = ({ params }) => {
 
             <img className='px-32 py-2 max-sm:p-2' src={course.post_image_thumb} alt={course.title} />
             {/* <p dangerouslySetInnerHTML={{ __html: course.description }}></p> */}
-            <div>{parse(course.description, { replace: styleNode })}</div>
+            <div className='bg-white text-black'>{parse(course.description, { replace: styleNode })}</div>
         </div>
     );
 }

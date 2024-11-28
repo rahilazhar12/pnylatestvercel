@@ -81,7 +81,7 @@ const Bestinstitute1 = () => {
           </div>
         </section>
 
-        <section className="p-5">
+        <section className="p-5 bg-white text-black">
           <h1 className="text-xl p-5  font-semibold">{data.page.page_title}</h1>
           {parsedDescription}
         </section>

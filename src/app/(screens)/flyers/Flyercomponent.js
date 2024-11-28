@@ -6,7 +6,7 @@ import React from "react";
 const Flyercomponent = ({ courses, flyerThumb }) => {
   return (
     <>
-      <div className="block rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+      <div className="block rounded-lg bg-white shadow-lg ">
         <div className="relative overflow-hidden">
           <img
             src={flyerThumb}
@@ -22,7 +22,7 @@ const Flyercomponent = ({ courses, flyerThumb }) => {
           </Link>
         </div>
         <div className="p-6">
-          <h5 className="mb-4 text-2xl text-center font-semibold leading-snug text-neutral-800 ">
+          <h5 className="mb-4 text-2xl text-center font-semibold leading-snug text-black">
             {courses}
           </h5>
         </div>

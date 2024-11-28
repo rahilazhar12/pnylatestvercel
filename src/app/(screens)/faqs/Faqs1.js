@@ -69,7 +69,7 @@ const Faqs1 = () => {
                 </div>
             </section>
             <section>
-                <div className='grid grid-cols-4 max-sm:grid-cols-1 '>
+                <div className='grid grid-cols-4 max-sm:grid-cols-1 bg-white '>
                     <div className=' col-span-1'>
                         <div className=' bg-blue-500 h-full xl:w-[250px] max-sm:hidden  ml-[59px] max-sm:ml-0 flex justify-center items-center'>
                             <Image className=' w-[236px] h-[122px]' src={faq} alt="" />
@@ -100,7 +100,7 @@ const Faqs1 = () => {
                             <div className='text-center  mb-4 text-[32px] font-semibold '>{selectedFaq?.name}</div>
                             <div>
                                 {selectedFaq?.faqs.map((detail, index) => (
-                                    <div key={index} className="block w-full rounded-lg bg-white text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 mb-4  ">
+                                    <div key={index} className="block w-full rounded-lg bg-white text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  mb-4">
                                         <div className="p-6 max-sm:p-3">
                                             <div className="flex justify-between items-center">
                                                 <p className="text-base text-neutral-600 ">

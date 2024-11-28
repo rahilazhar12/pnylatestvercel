@@ -77,7 +77,7 @@ const Flyers = () => {
         {/* <div className='text-[20px] font-normal max-sm:text-[16px] max-sm:text-center'>Learn more about the company and the team behind it.</div> */}
       </section>
 
-      <div className="grid grid-cols-4 max-sm:grid-cols-1 gap-3 p-3">
+      <div className="grid grid-cols-4 max-sm:grid-cols-1 gap-3 p-3 bg-white">
         {data.flyers &&
           Object.keys(data.flyers).slice(0, 12).map((flyerKey, index) => {
             const flyer = data.flyers[flyerKey];

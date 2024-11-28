@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import parse, { domToReact } from "html-react-parser";
 import axios from "axios";
 import Image from "next/image";
-import gif from '../../assets/image/gif.gif';
+import gif from "../../assets/image/gif.gif";
 const Client = () => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -23,9 +23,7 @@ const Client = () => {
     };
 
     fetchData();
-
   }, []);
-
 
   if (isLoading) {
     return (
@@ -41,23 +39,22 @@ const Client = () => {
     );
   }
 
-
   const parsedDescription = parse(data.page.page_description, {
     replace: (domNode) => {
       if (domNode.type === "tag") {
         if (domNode.name === "p") {
           // Adding responsive padding and text alignment classes
-          const props = { className: "px-4 sm:px-32 py-2 text-justify " };
+          const props = { className: "px-4 sm:px-32 py-2 text-justify text-black" };
           return <p {...props}>{domToReact(domNode.children)}</p>;
         }
         if (domNode.name === "h3") {
           // Adjusting padding and font size for smaller screens
-          const props = { className: "p-3 sm:p-5 text-base sm:text-lg " };
+          const props = { className: "p-3 sm:p-5 text-base sm:text-lg text-black" };
           return <p {...props}>{domToReact(domNode.children)}</p>;
         }
         if (domNode.name === "ul") {
           // Adjusting padding for smaller screens
-          const props = { className: "p-3 sm:p-5 " };
+          const props = { className: "p-3 sm:p-5 text-black" };
           return <p {...props}>{domToReact(domNode.children)}</p>;
         }
       }
@@ -66,16 +63,15 @@ const Client = () => {
 
   return (
     <main>
-
-
       <section>
         <div className="bg-[#152438] text-white h-[206px] flex flex-col justify-center items-center">
-          <div className="text-4xl sm:text-[48px] font-semibold">Privacy Policy</div>
+          <div className="text-4xl sm:text-[48px] font-semibold">
+            Privacy Policy
+          </div>
         </div>
       </section>
 
-
-      {parsedDescription}
+      <div className="bg-white text-black">{parsedDescription}</div>
     </main>
   );
 };
