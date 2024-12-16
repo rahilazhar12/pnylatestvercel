@@ -1177,7 +1177,6 @@ const nonExistentPaths = [
   "/_next/image?url=/_next/static/media/PNY",
   "/Trainings logo.68824f43.png&w=1080&q=75",
   "/_next/static/media/a34f9d1faa5f3315-s.p.woff2",
-  "/favicon.ico",
   "/master-",
   "/cctv-installation-",
   "/_next/image?url=/_next/static/media/gif.aaa3a94c.gif&w=1080&q=75",
