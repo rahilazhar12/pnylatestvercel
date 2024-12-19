@@ -6,7 +6,7 @@ import iqbaltown from "../../assets/image/iqbal town.png";
 import johartown from "../../assets/image/Jahor town.png";
 import multan from "../../assets/image/Multan.png";
 import rawal from "../../assets/image/rawalpindi.png";
-import shad from "../../assets/image/shad.webp";
+import shad from "../../assets/image/shad.png";
 import pnylogonew from "../../assets/image/PNY Trainings logo.png";
 import saudf from "../../assets/image/saudiaf.png";
 import sgdf from "../../assets/image/sgdf.png";
