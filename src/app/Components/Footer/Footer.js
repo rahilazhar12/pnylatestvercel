@@ -7,9 +7,7 @@ import johartown from "../../assets/image/Jahor town.png";
 import multan from "../../assets/image/Multan.png";
 import rawal from "../../assets/image/rawalpindi.png";
 import shad from "../../assets/image/shad.webp";
-import temp from "../../assets/image/pny logo dark.jpg.png"
 import pnylogonew from "../../assets/image/PNY Trainings logo.png";
-import pnylogodark from "../../assets/image/pny logo dark.jpg.png";
 import saudf from "../../assets/image/saudiaf.png";
 import sgdf from "../../assets/image/sgdf.png";
 import Link from "next/link";
@@ -77,17 +75,12 @@ const Footer = () => {
             <footer className="footer p-10  text-black bg-gray-200">
                 <aside className="lg:w-[361px]">
                     <Image
-                        className="block dark:hidden"
+                        
                         src={pnylogonew}
                         alt=""
                         width={159}
                     />
-                    <Image
-                        className="dark:block hidden"
-                        src={pnylogodark}
-                        alt=""
-                        width={159}
-                    />
+                  
                     <p>
                         {" "}
                         <span className="font-bold">Head Office</span> <br />
@@ -256,7 +249,7 @@ const Footer = () => {
                         <Image
                             className="rounded-full mb-2"
                             src={shad}
-                            alt="Rawalpindi"
+                            alt="Shahdara"
                             width={60}
                         />
                         <h3 className="text-black font-bold text-lg">
@@ -313,7 +306,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <footer className="footer footer-center p-4 text-base-content bg-gray-200 text-black">
+            <footer className="footer footer-center p-4  bg-gray-200 text-black">
                 <aside>
                     <p className="text-xl font-bold  ">
                         Courses We Offers in Cities
@@ -327,7 +320,7 @@ const Footer = () => {
                             "sialkot",
                             "faisalabad",
                             "gujranwala",
-                            "azadKashmir",
+                            "azad-Kashmir",
                             "islamabad",
                             "sargodha",
                         ].map((city) => (

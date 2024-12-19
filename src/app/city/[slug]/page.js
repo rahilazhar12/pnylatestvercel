@@ -11,7 +11,7 @@ const cities = [
     { slug: "sialkot" },
     { slug: "faisalabad" },
     { slug: "gujranwala" },
-    { slug: "azadKashmir" },
+    { slug: "azad-Kashmir" },
     // Add more cities as needed
 ];
 
