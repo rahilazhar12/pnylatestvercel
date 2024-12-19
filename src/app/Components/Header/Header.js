@@ -86,7 +86,7 @@ const Header = () => {
 
                         {/* Secondary nav */}
                         <div className="hidden lg:flex items-center space-x-3">
-                            <MenuIntroduction />
+                            {/* <MenuIntroduction /> */}
                             <Link
                                 href="https://lms.pnytraining.com/"
                                 target="_blank"
