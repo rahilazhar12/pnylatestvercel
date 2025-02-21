@@ -31,11 +31,21 @@ import { ownersdata } from "../../Components/Data/Data";
 import frame from "../../assets/image/Frame 624.png";
 import frame2 from "../../assets/image/Frame 61.png";
 import TawkToChatbot from "@/app/Components/Chatbot/Talktobot";
+import match from '../../assets/Gallery/match.jpg'
 
 const ClientComponent = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [home, setHome] = useState([]);
+  const [votes, setVotes] = useState({ pakistan: 0, india: 0 });
+  const [voted, setVoted] = useState(false);
+
+  const handleVote = (team) => {
+    if (!voted) {
+      setVotes((prevVotes) => ({ ...prevVotes, [team]: prevVotes[team] + 1 }));
+      setVoted(true);
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -94,7 +104,6 @@ const ClientComponent = () => {
       <section className="bg-white">
         <TawkToChatbot />
         {/* <Homecarousal /> */}
-
         <div className="w-full h-full">
           <Image
             className="w-full h-auto object-contain"
@@ -103,7 +112,6 @@ const ClientComponent = () => {
             loading="lazy"
           />
         </div>
-
         {/* Section-1 */}
         <div className="container mx-auto p-4 flex md:flex-col flex-col lg:flex-row xl:flex-row 2xl:flex-row md:items-center bg-white text-black">
           <div className=" flex-1 max-sm:order-1 px-2  max-sm:text-center md:text-center lg:text-center xl:text-start 2xl:text-start max-sm:p-3">
@@ -125,8 +133,50 @@ const ClientComponent = () => {
             </p>
           </div>
         </div>
+        <div className="container mx-auto p-4 text-center bg-gray-100 rounded-lg mt-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-red-600">
+            Vote & Win the Prize!
+          </h2>
+          <p className="text-gray-700 text-lg md:text-xl mt-2">
+            Who will win the contest?
+          </p>
 
-        {/* Section-2 */}
+          {/* Contest Image */}
+          <div className="flex justify-center my-4">
+            <Image
+              src={match} // Replace with your contest image path
+              alt="Pakistan vs India Contest"
+              width={600}
+              height={300}
+              className="rounded-lg"
+            />
+          </div>
+
+          {/* Polling Buttons */}
+          <div className="flex flex-col md:flex-row justify-center gap-4 mt-4">
+            <button
+              onClick={() => handleVote("pakistan")}
+              className="px-6 py-3 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition"
+              disabled={voted}
+            >
+              Pakistan ({votes.pakistan})
+            </button>
+            <button
+              onClick={() => handleVote("india")}
+              className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
+              disabled={voted}
+            >
+              India ({votes.india})
+            </button>
+          </div>
+
+          {voted && (
+            <p className="mt-4 text-green-700 font-semibold">
+              Thank you for voting!
+            </p>
+          )}
+        </div>
+        
         <section
           className="bg-blue-100"
           style={{
@@ -152,7 +202,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-3 */}
         <section>
           <div className="bg-white text-center p-8">
@@ -212,7 +261,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-4 */}
         <section className="max-sm:mt-8 bg-gray-100 text-black">
           <div className="grid md:p-5 lg:space-y-5">
@@ -238,7 +286,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-5 */}
         <section className=" bg-white">
           <div className="lgh "></div>
@@ -291,7 +338,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-6 */}
         <section
           id="duration"
@@ -319,7 +365,6 @@ const ClientComponent = () => {
             ))}
           </div>
         </section>
-
         <section className="py-8 bg-white text-black">
           <div className="startlearning lg:mt-8 lgh mb-6 max-sm:mt-7 md:mt-6 ">
             <p>Course Categories</p>
@@ -364,7 +409,6 @@ const ClientComponent = () => {
             </Link>
           </div>
         </section>
-
         {/* Section-8*/}
         <section className="bg-gray-50 md:p-5 text-black">
           <div className="grid grid-cols-12 gap-5 max-sm:grid-cols-6">
@@ -416,7 +460,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-10 */}
         {/* <section className="flex justify-center items-center flex-col p-3 space-y-3 bg-white text-black">
                     <div className="lgh ">Leaders of Youth</div>
@@ -426,7 +469,6 @@ const ClientComponent = () => {
                         to success and prosperity.
                     </div>
                 </section> */}
-
         {/* <div className="flex  justify-center p-5 max-sm:p-4 bg-white">
                     <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4">
                         {ownersdata.map((items, index) => (
@@ -456,7 +498,6 @@ const ClientComponent = () => {
                         ))}
                     </div>
                 </div> */}
-
         {/* Section-11 */}
         <section className="lg:p-10 bg-white text-black">
           <div className="grid justify-center">
@@ -472,7 +513,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-12 */}
         {/* Section-12 */}
         <section className="bg-[#F9FAFB] h-auto">
@@ -491,7 +531,6 @@ const ClientComponent = () => {
             </div>
           </div>
         </section>
-
         {/* Section-13 */}
         <section>
           <div
@@ -507,7 +546,6 @@ const ClientComponent = () => {
             <div className="">{parsedDescription}</div>
           </div>
         </section>
-
         {/* Section-14 */}
         <section>
           <div className="grid justify-center lg:mt-10">
