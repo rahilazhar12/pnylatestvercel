@@ -133,49 +133,8 @@ const ClientComponent = () => {
             </p>
           </div>
         </div>
-        <div className="container mx-auto p-4 text-center bg-gray-100 rounded-lg mt-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-red-600">
-            Vote & Win the Prize!
-          </h2>
-          <p className="text-gray-700 text-lg md:text-xl mt-2">
-            Who will win the contest?
-          </p>
-
-          {/* Contest Image */}
-          <div className="flex justify-center my-4">
-            <Image
-              src={match} // Replace with your contest image path
-              alt="Pakistan vs India Contest"
-              width={600}
-              height={300}
-              className="rounded-lg"
-            />
-          </div>
-
-          {/* Polling Buttons */}
-          <div className="flex flex-col md:flex-row justify-center gap-4 mt-4">
-            <button
-              onClick={() => handleVote("pakistan")}
-              className="px-6 py-3 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition"
-              disabled={voted}
-            >
-              Pakistan ({votes.pakistan})
-            </button>
-            <button
-              onClick={() => handleVote("india")}
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
-              disabled={voted}
-            >
-              India ({votes.india})
-            </button>
-          </div>
-
-          {voted && (
-            <p className="mt-4 text-green-700 font-semibold">
-              Thank you for voting!
-            </p>
-          )}
-        </div>
+        
+      
         
         <section
           className="bg-blue-100"
