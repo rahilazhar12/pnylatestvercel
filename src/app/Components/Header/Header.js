@@ -30,7 +30,7 @@ const Header = () => {
                                     className="flex items-center py-5 px-2 animate-pulse"
                                 >
                                     <button className="bg-[#FFBA4A] font-bold text-black px-1 text-sm py-1 md:px-3 md:text-xs">
-                                        Pro Bootcamps 2024
+                                        Pro Bootcamps 2025
                                     </button>
                                 </Link>
                             </div>
