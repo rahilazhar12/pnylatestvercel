@@ -37,13 +37,8 @@ export default async function Page({ params }) {
 
   return (
     <>
-
       <title>{metadata.metatitle}</title>
       <meta name="description" content={metadata.metadescription} />
-
-
-
-
       <ClientCourses params={params} />
     </>
   );
